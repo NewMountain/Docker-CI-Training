@@ -13,5 +13,10 @@ app.get('/', function(req, res) {
   });
 });
 
+
+app.get('/test', function (req, res) {
+    res.send('Hello world. Test passed!');
+})
+
 app.listen(8080);
 module.exports.getApp = app;

@@ -7,5 +7,7 @@ deployment:
       - $DOCKER_HUB_TRIGGER
 
 test:
+  post: 
+    - bash <(curl -s https://codecov.io/bash)
   override:   
     - mocha 
